@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c, d;
+	cin >> a >> b;
+	if (a >= b)
+	{
+		c = a;
+		d = b;
+	}
+	else
+	{
+		c = b;
+		d = a;
+	}
+	for (int i = d; i >= 1; i--)
+		if (c % i == 0 && d % i == 0) {
+			cout << i;
+			break;
+		}
+
+}
